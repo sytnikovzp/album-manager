@@ -1,4 +1,4 @@
-import React from 'react'
+import './AlbumsList.css'
 
 function AlbumsList() {
   return (
