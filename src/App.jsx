@@ -1,4 +1,11 @@
-import { BrowserRouter as Router } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  NavLink,
+  Link,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom';
 import Albums from './components/albums/Albums';
 import Users from './components/users/Users';
 import './App.css';
@@ -6,8 +13,40 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <Albums />
-      <Users />
+      <div className='header'>
+        <ul>
+          {/* <li>
+            <a href='/albums'>Test</a>
+          </li> */}
+          <li>
+            <NavLink to='/albums'>Albums</NavLink>
+          </li>
+          <li>
+            <NavLink to='/Users'>Users</NavLink>
+          </li>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+        </ul>
+      </div>
+      <Switch>
+        <Route path='/' exact>
+          Home
+        </Route>
+        <Route path='/albums'>
+          <Albums movies='movie' />
+        </Route>
+        <Route
+          path='/users'
+          render={(props) => <Users {...props} title='user'></Users>}
+        />
+        {/* <Route path='/users' component={Users} /> */}
+        {/* <Route path='*'>
+          <Redirect to='albums' />
+        </Route> */}
+        {/* <Redirect from='*' to='albums' /> */}
+        <Redirect path='*' to='albums' />
+      </Switch>
     </Router>
   );
 }
