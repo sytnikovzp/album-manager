@@ -19,7 +19,9 @@ function App() {
             <a href='/albums'>Test</a>
           </li> */}
           <li>
-            <NavLink to='/albums'>Albums</NavLink>
+            <NavLink to='/albums' activeClassName='selected'>
+              Albums
+            </NavLink>
           </li>
           <li>
             <NavLink to='/Users'>Users</NavLink>
@@ -38,7 +40,7 @@ function App() {
         </Route>
         <Route
           path='/users'
-          render={(props) => <Users {...props} title='user'></Users>}
+          render={(props) => <Users {...props} title='User'></Users>}
         />
         {/* <Route path='/users' component={Users} /> */}
         {/* <Route path='*'>
