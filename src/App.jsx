@@ -24,7 +24,7 @@ function App() {
             </NavLink>
           </li>
           <li>
-            <NavLink to='/Users'>Users</NavLink>
+            <NavLink to='/users'>Users</NavLink>
           </li>
           <li>
             <Link to='/'>Home</Link>

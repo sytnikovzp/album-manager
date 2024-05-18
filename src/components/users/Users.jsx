@@ -20,9 +20,9 @@ function Users() {
       </nav>
       <hr />
       <Switch>
-        <Route path={`${path}/add:id`} component={UserForm} />
+        <Route path={`${path}/add/:id`} component={UserForm} />
         <Route path={`${path}/add`}>
-          <Redirect to={`${path}/add:id`}>
+          <Redirect to={`${path}/add/:id`}>
             <UserForm />
           </Redirect>
         </Route>
