@@ -3,7 +3,6 @@ import AlbumPhotos from './AlbumPhotos';
 import AlbumsList from './AlbumsList';
 
 function Albums() {
-  // const match = useRouteMatch();
   const { path } = useRouteMatch();
 
   return (
