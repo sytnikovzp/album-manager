@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useRouteMatch, Link } from 'react-router-dom';
-// ===========================
 import { getAlbums } from '../../store/slices/albumSlice';
-// ===========================
 import './AlbumsList.css';
 
 function AlbumsList() {

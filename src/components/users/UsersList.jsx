@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useRouteMatch, Link } from 'react-router-dom';
-// ===========================
 import { getAllUsers, deleteUser } from '../../store/slices/usersSlice';
-// ===========================
 import './UsersList.css';
 
 function UsersList() {
