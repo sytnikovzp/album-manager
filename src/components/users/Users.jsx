@@ -1,11 +1,8 @@
-// import React from 'react'
-
 import {
 	Routes,
 	Route,
 	NavLink,
 	Navigate,
-	// useRouteMatch,
 } from 'react-router-dom';
 import UserForm from './UserForm';
 import AlbumPhotos from '../albums/AlbumPhotos';
@@ -13,7 +10,6 @@ import UserAlbums from './UserAlbums';
 import UsersList from './UsersList';
 
 function Users() {
-	// const { path, url } = useRouteMatch();
 
 	return (
 		<>

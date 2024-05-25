@@ -1,9 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
-// ===========================
 import { getUserAlbums } from '../../store/slices/albumSlice';
-// ===========================
 
 function UserAlbums() {
   const dispatch = useDispatch();
