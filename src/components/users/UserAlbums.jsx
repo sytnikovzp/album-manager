@@ -18,7 +18,7 @@ function UserAlbums() {
     <ul className='albums-container'>
       {albums.map(({ id, title }) => (
         <li key={id} className='album-item'>
-          <Link to={`album/${id}`}>{title}</Link>
+          <Link to={`/albums/${id}`}>{title}</Link>
         </li>
       ))}
     </ul>
