@@ -43,7 +43,7 @@ function UserForm() {
 
   const renderForm = ({ isValid }) => {
     return (
-      <Form id='users-form' onSubmit={onFormSubmit}>
+      <Form id='users-form'>
         <div className='field-container'>
           <label htmlFor='name'>Name</label>
           <Field as={TextField} type='text' name='name' id='name' />
